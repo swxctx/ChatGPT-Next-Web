@@ -702,15 +702,15 @@ export function Settings() {
 
           <ListItem
             title={Locale.Settings.Update.Version(currentVersion ?? "unknown")}
-            subTitle={
-              checkingUpdate
-                ? Locale.Settings.Update.IsChecking
-                : hasNewVersion
-                ? Locale.Settings.Update.FoundUpdate(remoteId ?? "ERROR")
-                : Locale.Settings.Update.IsLatest
-            }
+            // subTitle={
+            //   checkingUpdate
+            //     ? Locale.Settings.Update.IsChecking
+            //     : hasNewVersion
+            //     ? Locale.Settings.Update.FoundUpdate(remoteId ?? "ERROR")
+            //     : Locale.Settings.Update.IsLatest
+            // }
           >
-            {checkingUpdate ? (
+            {/* {checkingUpdate ? (
               <LoadingIcon />
             ) : hasNewVersion ? (
               <Link href={updateUrl} target="_blank" className="link">
@@ -722,7 +722,7 @@ export function Settings() {
                 text={Locale.Settings.Update.CheckUpdate}
                 onClick={() => checkUpdate(true)}
               />
-            )}
+            )} */}
           </ListItem>
 
           <ListItem title={Locale.Settings.SendKey}>
@@ -896,7 +896,7 @@ export function Settings() {
           </ListItem>
         </List>
 
-        <List id={SlotID.CustomModel}>
+        {/* <List id={SlotID.CustomModel}>
           {showAccessCode && (
             <ListItem
               title={Locale.Settings.Access.AccessCode.Title}
@@ -1165,7 +1165,7 @@ export function Settings() {
               }
             ></input>
           </ListItem>
-        </List>
+        </List> */}
 
         <List>
           <ModelConfigList

@@ -153,7 +153,7 @@ export function ModelConfigList(props: {
             ></input>
           </ListItem>
 
-          <ListItem
+          {/* <ListItem
             title={Locale.Settings.InputTemplate.Title}
             subTitle={Locale.Settings.InputTemplate.SubTitle}
           >
@@ -166,7 +166,7 @@ export function ModelConfigList(props: {
                 )
               }
             ></input>
-          </ListItem>
+          </ListItem> */}
         </>
       )}
       <ListItem
